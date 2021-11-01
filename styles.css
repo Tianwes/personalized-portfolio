@@ -6,7 +6,7 @@ body{
     position: fixed;
     height: 250px;
     width: 250px;
-    background: #e9c261;
+    background: #f6e1c8;
     border-radius: 0 0 0 100%;
     box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
     left: calc(100% - 200px);
@@ -73,7 +73,30 @@ body{
     right: 65px;
     position: absolute;
 } */
-
+.home-div {
+    height: 100vh;
+}
+.info-col{
+    text-align-last: right;
+    padding-top: 100px;
+}
+.div1-h2 {
+    padding-bottom: 10px;
+}
+.div1-h1{
+    font-size: 6rem;
+    
+}
+.yellowCoveUp {
+    height: 100vh;
+    z-index: -5;
+    display: inline;
+    position: absolute;
+}
 .drawnMe {
+    margin: 115px 0px 0 65px;
     height: 90vh;
+    z-index: -4;
+    display: inline;
+    position: absolute;
 }
