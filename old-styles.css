@@ -1,0 +1,348 @@
+/* body{
+    padding: 0;
+    margin: 0;
+}
+.menu {
+    position: fixed;
+    height: 250px;
+    width: 250px;
+    background: #f6e1c8;
+    border-radius: 0 0 0 100%;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+    left: calc(100% - 200px);
+    transition: 1s;
+  }
+  .menu:hover {
+    height: 600px;
+    width: 600px;
+    left: calc(100% - 600px);
+}
+  .menu:hover > nav {
+    top: 20%;
+    left: 40%;
+  }
+  .menu nav {
+    position: absolute;
+    top: -100px;
+    left: 200px;
+    transition: 1s;
+  }
+  .menu nav ul {
+    list-style-type: none;
+    font-size: 26px;
+  }
+  .menu nav ul li {
+    text-transform: uppercase;
+  }
+  .menu nav ul li a {
+    text-decoration: none;
+    color: white;
+    line-height: 2em;
+    letter-spacing: 0.2em;
+  }
+  .menu nav ul li a:hover {
+    color: #ddd;
+  } */
+  /* .menu_button1 {
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    margin: 15px 0;
+    border-radius: 50%;
+    display: inline;
+    right: 65px;
+    position: absolute;
+}
+.menu_button2 {
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    margin: 75px 0;
+    border-radius: 50%;
+    display: inline;
+    right: 65px;
+    position: absolute;
+}
+.menu_button3 {
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    margin: 135px 0;
+    border-radius: 50%;
+    display: inline;
+    right: 65px;
+    position: absolute;
+} */
+
+/* All DIVS */
+/* .container, .row {
+    height: 100vh;
+}
+
+.info-col{
+    text-align-last: right;
+    padding-top: 75px;
+}
+.div1-h2 {
+    padding-bottom: 5px;
+}
+.div1-h1{
+    font-size: 6rem;
+    
+}
+.yellowCoveUp {
+    height: 100vh;
+    z-index: -5;
+    display: inline;
+    position: absolute;
+    margin-top: 45px;
+}
+.drawnMe {
+    margin: 115px 0px 0 65px;
+    height: 90vh;
+    z-index: -4;
+    display: inline;
+    position: absolute;
+}
+
+.yellowCoveDown {
+    height: 100vh;
+    z-index: -5;
+    display: inline;
+    position: absolute;
+    transform: rotate(180deg) translateX(-2px);
+    margin-top: -45px;
+}
+
+.blue-col {
+    margin: 0;
+    padding: 0;
+}
+.speechBubble {
+    margin: 5px 0 0px
+ -50px;
+    position: absolute;
+    width: 50vw;
+    z-index: -1;
+}
+
+.bubbleText-div {
+    display: inline;
+    position: relative;
+    z-index: 10;
+    top: 240px;
+}
+
+.aboutMe-text {
+    width: 80%;
+    margin: 18px 0px 0 30px;
+} */
+/* ************************* */
+/* ************************* */
+/* *************************  */
+/* variables */
+:root {
+    --primary: #144b4f;
+    --secondary: #f8e460;
+}
+/* reset - strips default browser styles*/
+body, p, a, ul, li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+li {
+    list-style-type: none;
+}
+
+/* fonts */
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Calistoga', cursive;
+font-family: 'Dosis', sans-serif; */
+
+
+/* mobile styles (starting point)*/
+body {
+    overflow-x: hidden!important;
+    font-family: 'Dosis', sans-serif;
+}
+h1, h2 {
+    color: var(--primary);
+}
+.menu {
+    display: none;
+}
+
+/* Home Section */
+#home-section {
+    overflow: hidden;
+    height: 100vh;
+}
+.home-h2 {
+    padding: 30px;
+}
+.home-h1 {
+    font-family: 'Calistoga', cursive;
+    font-size: 3rem;
+    position: relative;
+    z-index: 1;
+}
+.yellowCoveUp {
+    position: relative;
+    transform: translate(198px, -102px) scale(2);
+    z-index: 0;
+}
+.drawnMe {
+    transform: scale(2.5);
+    z-index: 10;
+    margin: 45px 0px 0px -25px;
+    position: relative;
+}
+/* END - Home Section */
+
+/* About Me Section */
+#aboutMe-section {
+    overflow: hidden;
+    height: 160vh;
+}
+.speechBubble {
+    display: none;
+}
+.yellowCoveDown {
+    transform: rotate(
+180deg) scale(2) translate(-112px, 222px);
+    position: relative;
+    z-index: 0;
+}
+.aboutMe-text {
+    position: relative;
+    z-index: 1;
+    font-size: 1em;
+    padding: 0px 20px;
+    text-align: -webkit-right;
+}
+.aboutMe-h2 {
+    position: relative;
+    z-index: 1;
+    -webkit-writing-mode: vertical-rl;
+    margin-top: 100px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    word-spacing: 11px;
+    font-size: 2em;
+    transform: rotate(180deg);
+}
+.resumeLink {
+    margin: 150px 0 0 25px;
+    position:relative;
+    z-index: 1;
+    font-size: 2em;
+}
+.resumeLink a {
+    color: var(--primary);
+}
+/* END - About Me Section */
+
+/* Portfolio Section */
+#portfolio-section {
+    height: 100vh;
+    overflow: hidden;
+}
+.myWork-h2 {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    word-spacing: 7px;
+    font-size: 2em;
+    position: relative;
+    z-index: 1;
+    transform: translate(125px, 117px);
+}
+.yellowCoveSide {
+    transform: rotate(
+        270deg) translate(395px, -100px) scale(0.7);
+    position: relative;
+    z-index: -1;
+}
+.portfolioLinkImg {
+    height: 10em;
+    padding: 0 auto;
+    margin: 0 16px;
+    transform: translate(0px, 105px);
+    position: relative;
+    z-index: 2;
+}
+/* END - Portfolio Section */
+
+/* Contact Section */
+#contact-section {
+    background-color: var(--secondary);
+    overflow: hidden;
+    height: 45vh;
+}
+.contact-me {
+    -webkit-writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    word-spacing: 7px;
+    font-size: 2em;
+    position: relative;
+    font-weight: bolder;
+    padding-bottom: 12px; 
+}
+.contact-info-div {
+    padding: 35px 18px;
+}
+.contact-info {
+    color: var(--primary);
+}
+.line {
+    float: left;
+    padding: 15px 35px 0px 0px;
+    font-size: 2em;
+}
+/* END - Contact Section */
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #144b4e;
+    color: white;
+    text-align-last: center;
+}
+/* END - Footer */
+
+/* --mobiles */
+@media screen and (min-width: 340px){
+    body {
+        background-color: rgb(114, 250, 198);
+    }
+    /* Home Section */
+    .drawnMe {
+        transform: scale(2.5);
+        z-index: 10;
+        margin: 20px 0px 0px -39px;
+        position: relative;
+    }
+    /* END- Home Section */
+
+    
+}
+
+/* --small tablet styles */
+@media screen and (min-width: 620px){
+body {
+    background-color: salmon;
+}
+}
+/* --large tablet/laptops styles */
+@media screen and (min-width: 960px){
+    body {
+        font-size: 20px;
+    }
+}
+/* -- Desktop styles */
+@media screen and (min-width: 1200px){
+
+}
