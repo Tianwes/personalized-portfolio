@@ -34,13 +34,13 @@
     <nav>
         <ul class="menu">
             <li data-text="Home">Home</li>
-            <li data-text="Projects">Projects</li>
+            <a href="portfolio.html"><li data-text="Projects">Projects</li></a>
             <li data-text="About">About</li>
             <li data-text="Contact Me">Contact Me</li>
             <li data-text="My Resume">My Resume</li>
         </ul>
         <ul class="menu2">
-            <div><img src="assets/blueSpeechBubble.svg" class="test" alt=""/></div>
+            <div><li><img src="assets/blueSpeechBubble.svg" class="test" alt=""/></li></div>
             <div class="menu_icons">
                 <li data-text="LinkedIn"><i class="fab fa-linkedin"></i></li>
                 <li data-text="GitHub"><i class="fab fa-github-square"></i></li>
@@ -61,66 +61,137 @@
     </header>
     <section> -->
         
-        <div class="slider-container">
-            <div class="slider-control left inactive"></div>
-            <div class="slider-control right"></div>
-            <ul class="slider-pagi"></ul>
-            <div class="slider">
-              <div class="slide slide-0 active">
-                <div class="slide__bg"></div>
-                <div class="slide__content">
-                  <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                    <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-                  </svg>
-                  <div class="slide__text">
-                    <h2 class="slide__text-heading">Petal Power</h2>
-                    <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-                    <a class="slide__text-link">Project link</a>
-                  </div>
-                </div>
-              </div>
-              <div class="slide slide-1 ">
-                <div class="slide__bg"></div>
-                <div class="slide__content">
-                  <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                    <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-                  </svg>
-                  <div class="slide__text">
-                    <h2 class="slide__text-heading">Reel Junkies</h2>
-                    <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-                    <a class="slide__text-link">Project link</a>
-                  </div>
-                </div>
-              </div>
-              <div class="slide slide-2">
-                <div class="slide__bg"></div>
-                <div class="slide__content">
-                  <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                    <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-                  </svg>
-                  <div class="slide__text">
-                    <h2 class="slide__text-heading">DnD Spell Book</h2>
-                    <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-                    <a class="slide__text-link">Project link</a>
-                  </div>
-                </div>
-              </div>
-              <div class="slide slide-3">
-                <div class="slide__bg"></div>
-                <div class="slide__content">
-                  <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                    <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-                  </svg>
-                  <div class="slide__text">
-                    <h2 class="slide__text-heading">Timed Javascript Quiz</h2>
-                    <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-                    <a class="slide__text-link">Project link</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
+       
+<!--  ****************ALL PORTFOLIO**********  -->
+<div class="wrapper">
+  <h1>Portfolio | Tiffany Weaver</h1>
+  <div class="row">
+			<div class="col-lg-4" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front" style="background-image: url('assets/portfolioImages/petalPower.png')">
+						<div class="inner">
+							<p>Petal Power</p>
+              <!-- <span>eShop Mock-up</span> -->
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+						  <p>An eShop mock-up for a florist. I used to bootstrap and css-grid. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <span id="span1"><a href="www.google.com">Deployed Site</a></span>
+            <br/>
+            <span id="span2"><a href="www.google.com">GitHub</a></span>
+						</div>
+            
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front" style="background-image: url('assets/portfolioImages/reel-junkie.jpg')">
+						<div class="inner">
+							<p>Reel Junkie</p>
+              <!-- <span>Lorem ipsum</span> -->
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front" style="background-image: url('assets/portfolioImages/DnDImage.jpg')">
+						<div class="inner">
+							<p>DnD Spell Book</p>
+              <!-- <span>Lorem ipsum</span> -->
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front" style="background-image: url('assets/portfolioImages/JavaScriptQuizStill.jpg')">
+						<div class="inner">
+							<p>Timed Javascript Quiz</p>
+              <!-- <span>Lorem ipsum</span> -->
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front" style="background-image: url(https://unsplash.it/504/504/">
+						<div class="inner">
+							<p>Rendann</p>
+              <!-- <span>Lorem ipsum</span> -->
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front" style="background-image: url('https://unsplash.it/505/505/')">
+						<div class="inner">
+							<p>Reflupper</p>
+              <!-- <span>Lorem ipsum</span> -->
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front" style="background-image: url(https://unsplash.it/506/506/)">
+						<div class="inner">
+							<p>Acirassi</p>
+              <!-- <span>Lorem ipsum</span> -->
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front" style="background-image: url(https://unsplash.it/508/508/)">
+						<div class="inner">
+							<p>Sohanidd</p>
+              <span>Lorem ipsum</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+ </div>
         
      <!-- Footer -->
      <footer id="footer">

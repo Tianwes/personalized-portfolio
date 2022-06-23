@@ -189,20 +189,6 @@ ul.menu li:after {
   transition: transform 0.1s ease-out, opacity 0.1s ease-out;
 }
 
-/* ul.menu2 li:after {
-  opacity: 0;
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  color: #ffffff;
-  overflow: hidden;
-  transform: translate(-24px, 6px);
-  transition: transform 0.1s ease-out, opacity 0.1s ease-out;
-} */
 ul.menu li:hover:before,
 ul.menu2 li:hover:before {
   left: 0;
@@ -250,6 +236,11 @@ ul.menu2 li:hover:after {
   transition-delay: 1.15s;
 }
 
+.open ul.menu li:nth-child(6),
+.open ul.menu2 li:nth-child(6) {
+  transition-delay: 1.25s;
+}
+
 .menu2_info_li {
   font-size: 1.3em;
 }
@@ -272,7 +263,7 @@ ul.menu2 {
   display: inline-flex;
 }
 
-.test {
+.menuBubble {
   height: 200px;
 }
 
@@ -523,14 +514,33 @@ h1 {
   background-color: #ff914d;
   text-align: center;
   font-family: 'Dosis', sans-serif;
-  height: 5em;
-  
+  height: 3em;
+  padding-top: 1%;
 }
 
 a:hover {
   color: #eaa989;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f8e360;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff914d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #144b4f;
+}
 
 /* *************************************************************** */
 @-webkit-keyframes menu-animation {
