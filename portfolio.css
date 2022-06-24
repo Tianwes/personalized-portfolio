@@ -4,6 +4,17 @@ body {
     font-family: "Raleway", sans-serif;
     overflow-x: hidden;
   }
+
+  #background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #f8e360;
+    z-index: -1000;
+}
+
 /* ----- NAV ----- */
 button {
     opacity: 0.6;
@@ -275,23 +286,21 @@ a:hover {
 }
 
 /*  */
-h1 {
+#portH1 {
   color: #144b4f;
   font-family: 'Calistoga', cursive;
-  font-size: 4rem;
-  /* padding: 40px 0 40px 20%;
-  margin-bottom: 50px; */
+  font-size: 2.4rem;
+  text-align-last: center;
+  padding: 60px 0px 60px 62px;
 }
-
+#nameSpan {
+  color: #ff914d;
+  font-family: 'Dosis', sans-serif;
+  font-size: 2rem;
+  margin-left: 5px;
+}
 /* ******************************** */
-h1{
-  font-size: 2.5rem;
-  font-family: 'Montserrat';
-  font-weight: normal;
-  color: #444;
-  text-align: center;
-  margin: 2rem 0;
-}
+
 p {
   color: cornsilk;
   background: #f6c5ee21;
@@ -354,8 +363,9 @@ p {
   background: #cedce7;
   background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
   background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-  background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+  background: linear-gradient(45deg,  #233f54 0%,#fbba38 100%);
   font-size: 1.2rem;
+  font-family: 'Dosis', sans-serif;
 }
 
 .front:after{
@@ -389,7 +399,8 @@ p {
     width: 100%;
 }
 #span1, #span2 {
-  margin: 10px
+  margin: 10px;
+  font-family: 'Dosis', sans-serif;
 }
 
 .inner{
@@ -481,13 +492,20 @@ p {
   }
 }
 
+/* ****************************** */
+#svgMeBottom{
+  height: 375px;
+  display: inline-flex;
+  float: right;
+  margin: -263px -8px 0px -263px;
+}
   /* *****FOOTER***** */
 #footer {
   background-color: #ff914d;
   text-align: center;
   font-family: 'Dosis', sans-serif;
-  height: 3em;
-  padding-top: 1%;
+  height: 7em;
+  padding-top: 4%;
   
 }
   
@@ -500,12 +518,12 @@ p {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #ff914d;
+  background: #f8e360;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #f8e360;
+  background: #ff914d";
 }
 
 /* Handle on hover */
